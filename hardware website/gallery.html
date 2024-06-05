@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Computer Hardware Website: Home Page</title>
+     <link rel="stylesheet" href="style.css">
+     </head>
+
+<body>
+<div id="main">
+     <div id="header">
+        <h1>Gallery Page</h1>
+
+        <div id="social">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.jpg" alt="facebook">
+           </a>
+           <a href="https://www.X.com">
+            <img src="images/x.jpg" alt="x/twitter">
+       </a>
+       <a href="https://www.linkedin.com">
+        <img src="images/linkedin.jpg" alt="linkedin">
+       </a>
+     </div>
+     </div>
+
+         <div id="nav">
+              <ul>
+                 <li><a class="active" href="index.html">Home</a></li>
+                 <li><a href="motivation.html">Motivation</a></li>
+                 <li><a href="excersise.html">Exercise</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="healthy_eating.html">Healthy Eating</a></li>
+                 <li><a href="sleeping_habbits.html">Sleeping Habits</a></li>
+                 <li><a href="stop_drinking.html">Stop Drinking</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+</div>
+
+       <div id="content">
+        <div id="title">
+             <h2>Image Gallery</h2>
+        </div>
+
+
+        </div>
+
+
+</div>
+   
+<body>
+
+     </html>
+
+     <html>
+          <head>
+              <title>JS Image Slide Show with MOO ICT</title>
+          <style>
+      body{
+          background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+          height: 100%;
+      }
+      #container
+      {
+          width: 700px;
+          border: 4px solid black;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px;
+          text-align: center;
+          margin-top: 5%;
+          background-image: radial-gradient( circle 619.3px at 10% 20%,  rgba(166,223,75,1) 0%, rgba(255,217,57,1) 100.2% );
+      }
+      img
+      {
+          width: auto;
+          max-width: 500px;
+          height: 600px;
+          background-color: rgb(163, 0, 0);
+          padding: 10px;
+          border-radius: 30px;
+      }
+      button
+      {
+          width: 100px;
+          height: 60px;
+          margin-left: 100px;
+          margin-right: 100px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      @keyframes fadein {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+      .play
+      {
+          animation: fadein .4s ease-in;
+      }
+          </style>
+          </head>
+          <body>
+              
+              <div id="container">
+                  <h1>JS Image Slide Show with MOO ICT</h1>
+                  <div id="image">
+                      <img id="img" src="images/Picture1.jpg" alt="">
+                      <img id="img" src="images/Picture2.jpg" alt="">
+                  </div>
+                  <div id="controls">
+                      <button onclick="GoBack()">Back</button>
+                      <button onclick="GoNext()">Next</button>
+                  </div>
+              </div>
+              <script>
+                  var num = 1;
+                  var element = document.getElementById("img");
+                  function GoBack()
+                  {
+                      if(num > 1)
+                      {
+                          num--;
+                      }
+                      else
+                      {
+                          num = 6;
+                      }
+                      PlayAnimation();
+                  }
+                  function GoNext()
+                  {
+                      if(num < 6)
+                      {
+                          num++;
+                      }
+                      else
+                      {
+                          num = 1;
+                      }
+                      PlayAnimation();
+                  }
+                  function PlayAnimation()
+                  {
+                      element.src = "images/"+num+".jpg";
+                      element.classList.remove("play"); // reset the animation
+                      void element.offsetWidth; // trigger the reflow of img tag
+                      element.classList.add("play");
+                  }
+              </script>
+          </body>
+      </html>
+     

@@ -1,0 +1,201 @@
+html, body
+{
+     height: 100%;
+     color: black;
+     margin: 0;
+     padding: 0;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /*
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=a29dee&c2=5a7698&gt=l&gd=dtl
+*/
+background: #0011ff;
+background: linear-gradient(135deg, #0011ff, #0011ff);
+ 
+ 
+#header
+{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 0;
+}
+ 
+h1
+{
+    padding: 10;
+}
+ 
+#social
+{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+ 
+#social img
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left:  10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+ 
+a
+{
+    text-decoration: none;
+}
+ 
+*
+{
+    box-sizing: border-box;
+}
+ 
+#nav
+{
+    float: left;
+    width: 250px;
+    height:100%;
+}
+ 
+#nav a, #nav a:visited
+{
+    color: black;
+    font-weight: 600;
+    display: block;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+}
+ 
+#nav a:hover
+{
+    background-color: blueviolet;
+}
+ 
+a.active
+{
+    background-color: #dba5a5 !important;
+}
+ 
+#nav li
+{
+    list-style: none;
+}
+ 
+#nav ul
+{
+    padding: 0;
+}
+ 
+#content
+{
+    height: 2000px;
+    float: left;
+    padding: 15px;
+    border-left: 1px solid black;
+    width: calc(100% - 250px);
+}
+ 
+#title h2
+{
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+}
+ 
+#footer
+{
+    clear: both;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid black;
+}
+ 
+#home_box
+{
+    height: 65%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+}
+ 
+.pics
+{
+   display: inline-block;
+   margin: 5px;
+}
+.pic img
+{
+    height: 177px;
+    width: 210px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.pics p
+{
+    margin: 0;
+}
+ 
+.videocontainer
+{
+    display: block;
+    text-align: center;
+}
+ 
+.video
+{
+  width: 560px;
+  height: 315px;
+  overflow: hidden;
+  border: 2px solid black;
+  margin: 20px;
+  display: inline-block;
+}
+ 
+.container
+{
+    border-radius: 10px;
+    padding: 20px;
+}
+ 
+input[type=text], textarea, select
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+ 
+input[type=submit]
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+textarea
+{
+    height: 200px;
+}
+ 
